@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.0.37">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Webots</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+span.underline{text-decoration: underline;}
+div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<script src="intro_files/libs/clipboard/clipboard.min.js"></script>
+<script src="intro_files/libs/quarto-html/quarto.js"></script>
+<script src="intro_files/libs/quarto-html/popper.min.js"></script>
+<script src="intro_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="intro_files/libs/quarto-html/anchor.min.js"></script>
+<link href="intro_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="intro_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="intro_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="intro_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="intro_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Webots</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    
+  </div>
+  
+
+</header>
+
+<section id="what-is-we-bot" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-we-bot">What is we bot?</h2>
+<p>Simulation softeware package, offers a rapid prototyping enviornment allowes user to create 3D virtual worls with pysics properties.</p>
+</section>
+<section id="what-we-can-do-with-webots" class="level2">
+<h2 class="anchored" data-anchor-id="what-we-can-do-with-webots">What we can do with webots?</h2>
+<ul>
+<li>Mobile robot prototyping for academic research, automotive industry, aeronautics, etc</li>
+<li>Robot locomotion research (quadrupeds, legged robots, etc)</li>
+<li>Multi-agent research (swarm and collaborative robots)</li>
+<li>Adaptive behaviou research - genatic algorithm</li>
+<li>Teaching robotics</li>
+<li>Robot contests</li>
+</ul>
+</section>
+<section id="need-to-know-to-use-webots" class="level2">
+<h2 class="anchored" data-anchor-id="need-to-know-to-use-webots">Need to know to use Webots?</h2>
+<ul>
+<li>Basic C, C++, Java. Python or matlab</li>
+<li>3D computer graphics and VRML97 descriptive language if would like to create your own robot models or modify existing enviornments</li>
+</ul>
+</section>
+<section id="webot-simulation" class="level2">
+<h2 class="anchored" data-anchor-id="webot-simulation">Webot simulation:</h2>
+<ol type="1">
+<li>World file (.wbt): defines onw or several robots and their enviornment, my depend on PROTO files(.proto)</li>
+<li>Controller programs: use C/C++/Java/Python/MATLAB</li>
+<li>Physics plugin: used to modify webots regular physics behavior, use C/C++</li>
+</ol>
+</section>
+<section id="what-is-world" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-world">What is World?</h2>
+<p>A world is 3D description of the properties os robots and os their enviornment and containsdescription of every object: position, geometry, appearance, physical properties, typr of objects, etc.</p>
+<p>It has hierarchical structures where objects contain other object. For example, a robot can contain two wheels, a distance sensor and a joint which itself contains a camera, etc. it only specifies the name of the controller that is required for each robot but it does not contains controller code. world file (.wbt) strored in the ‘worlds’ subdirectory of each webots projects</p>
+</section>
+<section id="what-is-a-controller" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-a-controller">what is a controller?</h2>
+<p>Controllers can be written in any of the programming languages supported by Webots: C, C++, Java, Python or MATLAB. When a simulation starts, Webots launches the specified controllers, each as a separate process, and it associates the controller processes with the simulated robots.</p>
+<p>Some programming languages need to be compiled (C and C++) other languages need to be interpreted (Python and MATLAB) and some need to be both compiled and interpreted (Java). For example, C and C++ controllers are compiled to platform-dependent binary executables (for example “.exe” under Windows). Python and MATLAB controllers are interpreted by the corresponding run-time systems (which must be installed). Java controller need to be compiled to byte code (“.class” files or “.jar”) and then interpreted by a Java Virtual Machine. The source files and binary files of each controller are stored together in a controller directory. A controller directory is placed in the “controllers” subdirectory of each Webots project.</p>
+</section>
+<section id="part-1-install-and-run-first-simulation" class="level2">
+<h2 class="anchored" data-anchor-id="part-1-install-and-run-first-simulation">Part 1: Install and run first simulation</h2>
+<p><strong>Step 1.</strong> Download Webots from the <a href="https://cyberbotics.com/#cyberbotics">link</a> website</p>
+<p><strong>Step 2.</strong> Install and open the software in your system</p>
+<p><strong>Windows :</strong> follow the <a href="https://cyberbotics.com/doc/guide/starting-webots">documentation</a></p>
+<p><strong>Step 3.</strong> Start new project</p>
+<p>The wizards menu makes it easier to create new project and new controllers it has following menu items</p>
+<ul>
+<li><strong>New Project directory</strong> - It creates a project directory. A project directory contains several subdirectories that are used to store the files related to a particular Webots project, i.e.&nbsp;world files, controller files, data files, plugins, etc. Webots remembers the current project directory and automatically opens and saves any type of file from the corresponding subdirectory of the current project directory.</li>
+<li><strong>New Robot Controller</strong> - Create a new controller program. You will first be prompted to choose between a C, C++, Java, Python or MATLABTM controller. If you choose C or C++ on Windows, Webots will offer you the possibility to create a Makefile / gcc project or a Visual Studio project. Then, Webots will ask you to enter the name of your controller and finally it will create all the necessary files (including a template source code file) in your current project directory.</li>
+<li><strong>New Physics Plugin</strong> - Let you create a new physics plugin for your project. Webots asks you to choose a programming language (C or C++) and a name for the new physics plugin. Then it creates a directory, a template source code file and a Makefile in your current project.</li>
+</ul>
+<p>lets create new project Go to <code>Options menu</code> –&gt; <code>Wizards</code> –&gt; <code>New Project Directory</code> and follow the instructions:</p>
+<ol type="1">
+<li>Name the project directory <code>bug</code> instead of the proposed <code>my_project</code>.</li>
+<li>Name the world file <code>bug.wbt</code> instead of the proposed <code>empty.wbt</code>.</li>
+<li>Click all the tick boxes, including the “Add a rectangle arena” which is not ticked by default.</li>
+</ol>
+<p>Webots GUI is composed of four principal windows: the <strong>3D window</strong> that displays and allows you to interact with the 3D simulation, the <strong>Scene tree</strong> which is a hierarchical representation of the current world, the <strong>Text editor</strong> that allows you to edit source code, and finally, the <strong>Console</strong> that displays both compilation and controller outputs.</p>
+<p><strong>Step 4</strong> Add Robot (E-puck)</p>
+<p>Before we add robot lets Change Areana Size from 1x1m to 2x2 go to <code>RectangleArena</code> –&gt; <code>floorSize</code> and change the value of x and y to 2</p>
+<p>Now to add a robot click on the <code>Add</code> button at the top of the scene tree view. In the dialog box, choose <code>PROTO nodes (Webots Projects) / robots / gctronic / e-puck / E-puck (Robot)</code>. An e-puck robot should appear in the middle of the arena. Double-click on it in the scene tree to open its fields.</p>
+<p>Don’t forget to save your changes before you run your simulation otherwise will have to do the same process again.</p>
+<p>Notice it has <code>translation</code> and <code>rotation</code> fields, which changes if you change the robot position. also it has default Controller <code>e-pick_avoid_obstacles</code> so if you run the simulation robot able to move and avoid obstacles.</p>
+</section>
+<section id="part-2-create-controller" class="level2">
+<h2 class="anchored" data-anchor-id="part-2-create-controller">Part 2: Create controller</h2>
+<p>Lets create simple controller to move robot forward.</p>
+<p>Go to <code>Options menu</code> –&gt; <code>Wizards</code> –&gt; <code>New Robot Controller</code> select your language (python) and name the controller <code>move_forward</code>. it will open <code>.py</code> file in <strong>Text Editor</strong> with default structure.</p>
+<section id="move_forward.py-code" class="level5">
+<h5 class="anchored" data-anchor-id="move_forward.py-code">move_forward.py Code</h5>
+<div id="move_forward" class="cell" data-execution_count="1">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">"""move_forward controller."""</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># You may need to import some classes of the controller module. Ex:</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co">#  from controller import Robot, Motor, DistanceSensor</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> controller <span class="im">import</span> Robot</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>robot <span class="op">=</span> Robot()</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>time_step <span class="op">=</span> <span class="dv">32</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>max_speed <span class="op">=</span> <span class="fl">6.24</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="co"># lets create motor instances</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>left_motor <span class="op">=</span> robot.getMotor(<span class="st">'left wheel motor'</span>)</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>right_motor <span class="op">=</span> robot.getMotor(<span class="st">'right wheel motor'</span>)</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="co"># set motor position to inf and velocity to 0</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>left_motor.setPosition(<span class="bu">float</span>(<span class="st">'inf'</span>))</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>right_motor.setPosition(<span class="bu">float</span>(<span class="st">'inf'</span>))</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>left_motor.setVelocity(<span class="fl">0.0</span>)</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>right_motor.setVelocity(<span class="fl">0.0</span>)</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> robot.step(time_step) <span class="op">!=</span> <span class="op">-</span><span class="dv">1</span>:</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>    left_speed <span class="op">=</span> max_speed <span class="op">*</span><span class="fl">0.5</span></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>    right_speed <span class="op">=</span> max_speed <span class="op">*</span><span class="fl">0.25</span></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>   </span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>    left_motor.setVelocity(left_speed)</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>    right_motor.setVelocity(right_speed)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<p>To change the dafault controller of e-puck go to <code>e-puck</code> –&gt; <code>controller</code> and select a controller from the list, you will able to see your controller as <code>move_forward</code> in there. Run the simulation to see the behaviour of your controller.</p>
+<blockquote class="blockquote">
+<p>Try to move the robot in circular path by changing the controller code.</p>
+</blockquote>
+</section>
+</section>
+<section id="part-3-line-following" class="level2">
+<h2 class="anchored" data-anchor-id="part-3-line-following">Part 3: Line following</h2>
+<p>For line following we need IR sensors, to add IR sensors ro robot go to <code>e-puck</code> –&gt; <code>groundSensorsSlot</code> and click add icon, from <code>base node</code> select <code>DistanceSensors</code> and add. a distance sensor will be added to your epuck exactly at the front center but we need to make it offset by -1cm in y axis for our use, you can do so by going to <code>distance sensors</code>–&gt; <code>translation</code> and change y to -0.01m.</p>
+<p>Since we need IR sensor we will have to change sensor type from <code>distance sensors</code>–&gt; <code>type</code> and select <code>infra-red</code>.</p>
+<p>whenever we create a distance sensors it will asign its name as <code>diatance sensor</code> but lets change it to <code>ir0</code> so it will easy to call it in controller from <code>distance sensors</code>–&gt; <code>name</code>.</p>
+<p>Repeat the same process to add second ground sensors but this time make it 2cm offset in y direction.</p>
+<section id="bug0" class="level5">
+<h5 class="anchored" data-anchor-id="bug0">Bug0</h5>
+<div id="bug0" class="cell" data-execution_count="2">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">"""bug0 controller."""</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co"># You may need to import some classes of the controller module. Ex:</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co">#  from controller import Robot, Motor, DistanceSensor</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> controller <span class="im">import</span> Robot</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>my_robot <span class="op">=</span> Robot()</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="co"># def run_robot(robot):</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>time_step <span class="op">=</span> <span class="dv">32</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>max_speed <span class="op">=</span> <span class="fl">6.24</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a><span class="co">#motors</span></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>left_motor <span class="op">=</span> robot.getMotor(<span class="st">'left wheel motor'</span>)</span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>right_motor <span class="op">=</span> robot.getMotor(<span class="st">'right wheel motor'</span>)</span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>left_motor.setPosition(<span class="bu">float</span>(<span class="st">'inf'</span>))</span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>right_motor.setPosition(<span class="bu">float</span>(<span class="st">'inf'</span>))</span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>left_motor.setVelocity(<span class="fl">0.0</span>)</span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>right_motor.setVelocity(<span class="fl">0.0</span>)</span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>left_ir <span class="op">=</span> robot.getDistanceSensor(<span class="st">'ir1'</span>)   <span class="co"># get the distance sensors from the robot</span></span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>left_ir.enable(time_step)   <span class="co"># enable them with the time stamp</span></span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>right_ir <span class="op">=</span> robot.getDistanceSensor(<span class="st">'ir0'</span>)</span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>right_ir.enable(time_step)</span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> robot.step(time_step) <span class="op">!=</span> <span class="op">-</span><span class="dv">1</span>:</span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a>    left_ir_value <span class="op">=</span> left_ir.getValue()</span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a>    right_ir_value <span class="op">=</span> right_ir.getValue()</span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"left: </span><span class="sc">{}</span><span class="st"> rigt: </span><span class="sc">{}</span><span class="st">"</span>.<span class="bu">format</span>(left_ir_value, right_ir_value))</span>
+<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a>    left_speed <span class="op">=</span> max_speed <span class="op">*</span><span class="fl">0.25</span></span>
+<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a>    right_speed <span class="op">=</span> max_speed <span class="op">*</span><span class="fl">0.25</span></span>
+<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (left_ir_value <span class="op">&gt;</span> right_ir_value) <span class="kw">and</span> (<span class="dv">6</span> <span class="op">&lt;</span> left_ir_value <span class="op">&lt;</span> <span class="dv">15</span>):</span>
+<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">"go left"</span>)</span>
+<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a>        left_speed <span class="op">=</span> <span class="op">-</span>max_speed <span class="op">*</span><span class="fl">0.25</span></span>
+<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a>    <span class="cf">elif</span> (right_ir_value <span class="op">&gt;</span> left_ir_value) <span class="kw">and</span> (<span class="dv">6</span> <span class="op">&lt;</span> right_ir_value <span class="op">&lt;</span> <span class="dv">15</span>):</span>
+<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">"go right"</span>)</span>
+<span id="cb2-43"><a href="#cb2-43" aria-hidden="true" tabindex="-1"></a>        right_speed <span class="op">=</span> <span class="op">-</span>max_speed <span class="op">*</span><span class="fl">0.25</span></span>
+<span id="cb2-44"><a href="#cb2-44" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb2-45"><a href="#cb2-45" aria-hidden="true" tabindex="-1"></a>    left_motor.setVelocity(left_speed)</span>
+<span id="cb2-46"><a href="#cb2-46" aria-hidden="true" tabindex="-1"></a>    right_motor.setVelocity(right_speed)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      let href = ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
